@@ -144,7 +144,7 @@ floor.position.y = -2;
 scene.add(floor);
 
 //-----SPACESHIP
-const geometry = new TorusKnotGeometry(1, 0.5, 12, 4, 2, 1);
+const geometry = new TorusKnotGeometry(1, 0.5, , 4, 2, 1);
 const material = new MeshStandardMaterial({ map: metallicTexture });
 const ship = new Mesh(geometry, material);
 scene.add(ship);
@@ -163,6 +163,7 @@ const updateFrame = () => {
 
   earth.position.x = Math.cos(earthTmr) * 7;
   earth.position.z = Math.sin(earthTmr) * 7;
+  
 
   axis.position.x = Math.cos(earthTmr) * 7;
   axis.position.z = Math.sin(earthTmr) * 7;
