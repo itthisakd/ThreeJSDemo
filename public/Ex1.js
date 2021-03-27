@@ -47,7 +47,7 @@ const updateFrame = () =>
 	boxMesh.rotation.x += 0.01;
 	boxMesh.rotation.y += 0.01;
 	boxMesh.rotation.z += 0.01;
-	speed += 0.05;
+	speed += 0.01;
 
 	// Render
 	renderer.render(scene, camera);
